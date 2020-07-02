@@ -17,7 +17,7 @@ $(window).on("load", function(){
         bindto: '#bar-chart',
         size: {height:400},
         color: {
-            pattern: ['#E84A5F']
+            pattern: ['#2B95C8']
         },
 
         // Create the data table.
@@ -36,10 +36,6 @@ $(window).on("load", function(){
             }
         }
     });
-
-    setTimeout(function () {
-        barChart.resize({height:100})
-    }, 1000);
 
     // Resize chart on sidebar width change
     $(".menu-toggle").on('click', function() {

@@ -17,7 +17,7 @@ $(window).on("load", function(){
         bindto: '#stacked-bar',
         size: {height:400},
         color: {
-            pattern: ['#99B898','#FECEA8', '#FF847C', '#E84A5F']
+            pattern: ['#2B95C8','#FECEA8', '#FF847C', '#E84A5F']
         },
 
         // Create the data table.
@@ -56,6 +56,10 @@ $(window).on("load", function(){
     setTimeout(function () {
         stackedBarChart.groups([['data1', 'data2', 'data3', 'data4']]);
     }, 2000);
+
+    setTimeout(function () {
+        stackedBarChart.resize({height:100})
+    }, 1000);
 
     // Resize chart on sidebar width change
     $(".menu-toggle").on('click', function() {

@@ -16,7 +16,7 @@ $(window).on("load", function(){
     var donutChart = c3.generate({
         bindto: '#donut-chart',
         color: {
-            pattern: ['#99B898','#FECEA8', '#FF847C']
+            pattern: ['#2B95C8','#FECEA8', '#FF847C']
         },
 
         // Create the data table.
